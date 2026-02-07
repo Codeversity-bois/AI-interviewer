@@ -1,0 +1,31 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+websockets
+
+# Resume processing (Module 1)
+pypdf2>=2.0
+sentence-transformers
+astrapy
+numpy
+
+# Eye monitoring (Module 5)
+mediapipe>=0.10.0
+opencv-python>=4.8.0
+
+# Gemini AI
+google-genai
+
+# Gemini Live API (mic streaming)
+pyaudio
+
+# MongoDB
+pymongo
+
+# Multipart file upload support
+python-multipart
+
+fastapi==0.104.1
+websocket-client==1.6.4
+requests

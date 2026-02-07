@@ -1,0 +1,25 @@
+# Core FastAPI dependencies
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+websockets>=12.0
+
+# Gemini AI
+google-genai>=0.2.0
+
+# Database dependencies (optional - service works without them)
+astrapy>=0.7.0
+pymongo>=4.6.0
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# Proctoring/Eye Monitoring (optional - service works without them)
+mediapipe>=0.10.0
+opencv-python>=4.8.0
+
+# Multipart file upload support
+python-multipart>=0.0.6
+
+# HTTP client
+requests>=2.31.0

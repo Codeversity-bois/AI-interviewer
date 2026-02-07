@@ -1,0 +1,27 @@
+{
+  "session_id": "session_1770469869368",
+  "candidate_id": "demo-candidate-1",
+  "job_id": "demo-job-1",
+  "started_at": 1770469895.6229858,
+  "ended_at": 1770469933.565185,
+  "duration": 37.94219923019409,
+  "evaluation": {
+    "candidate_id": "demo-candidate-1",
+    "job_id": "demo-job-1",
+    "session_id": "session_1770469869368",
+    "turns": [],
+    "overall_score": 0,
+    "technical_competency": 0,
+    "communication_skills": 0,
+    "problem_solving": 0,
+    "cultural_fit": 0,
+    "strengths": [],
+    "weaknesses": [
+      "No interview transcript or per-turn evaluations were provided to assess the candidate."
+    ],
+    "recommendation": "no_hire",
+    "updated_at": 1770469897.0477908
+  },
+  "transcript": [],
+  "proctoring": null
+}

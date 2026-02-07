@@ -1,0 +1,70 @@
+{
+  "session_id": "session_1770470213739",
+  "candidate_id": "demo-candidate-1",
+  "job_id": "demo-job-1",
+  "started_at": 1770470240.0012717,
+  "ended_at": 1770470292.9735594,
+  "duration": 52.97228765487671,
+  "evaluation": {
+    "candidate_id": "demo-candidate-1",
+    "job_id": "demo-job-1",
+    "session_id": "session_1770470213739",
+    "turns": [],
+    "overall_score": 0,
+    "technical_competency": 0,
+    "communication_skills": 0,
+    "problem_solving": 0,
+    "cultural_fit": 0,
+    "strengths": [],
+    "weaknesses": [
+      "No information available to evaluate the candidate's performance."
+    ],
+    "recommendation": "no_hire",
+    "updated_at": 1770470241.3185523
+  },
+  "transcript": [],
+  "proctoring": {
+    "total_frames": 76,
+    "total_violations": 5,
+    "violations": [
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470251.3583179
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470256.3599942
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470281.2656412
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470284.2659583
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470287.2745261
+      }
+    ],
+    "avg_attention_score": 1.0,
+    "screen_focus_pct": 100.0,
+    "face_present_pct": 57.9
+  }
+}

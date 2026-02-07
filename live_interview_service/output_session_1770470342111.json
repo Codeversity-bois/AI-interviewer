@@ -1,0 +1,206 @@
+{
+  "session_id": "session_1770470342111",
+  "candidate_id": "demo-candidate-1",
+  "job_id": "demo-job-1",
+  "started_at": 1770470343.5250897,
+  "ended_at": 1770470428.294454,
+  "duration": 84.76936435699463,
+  "evaluation": {
+    "candidate_id": "demo-candidate-1",
+    "job_id": "demo-job-1",
+    "session_id": "session_1770470342111",
+    "turns": [],
+    "overall_score": 0,
+    "technical_competency": 0,
+    "communication_skills": 0,
+    "problem_solving": 0,
+    "cultural_fit": 0,
+    "strengths": [
+      "No interview data provided to assess strengths."
+    ],
+    "weaknesses": [
+      "No interview data provided to assess weaknesses.",
+      "Unable to evaluate candidate due to missing transcript and per-turn scores."
+    ],
+    "recommendation": "no_hire",
+    "updated_at": 1770470344.739741
+  },
+  "transcript": [],
+  "proctoring": {
+    "total_frames": 123,
+    "total_violations": 24,
+    "violations": [
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470350.4615884
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470353.468974
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470356.9670994
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470360.483787
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.9,
+        "message": "No face detected for 3.9s",
+        "timestamp": 1770470364.354994
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.1,
+        "message": "No face detected for 3.1s",
+        "timestamp": 1770470367.465837
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470370.4732578
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470373.4792151
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470376.9688034
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470380.4686837
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470383.969201
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470386.9790523
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.4,
+        "message": "No face detected for 3.4s",
+        "timestamp": 1770470390.329537
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470393.3422594
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.1,
+        "message": "No face detected for 3.1s",
+        "timestamp": 1770470396.468985
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.9,
+        "message": "No face detected for 3.9s",
+        "timestamp": 1770470400.3579667
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470403.358054
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 4.0,
+        "message": "No face detected for 4.0s",
+        "timestamp": 1770470407.3293083
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470410.3579028
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 4.0,
+        "message": "No face detected for 4.0s",
+        "timestamp": 1770470414.3581982
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470417.3602562
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.0,
+        "message": "No face detected for 3.0s",
+        "timestamp": 1770470420.3689332
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.1,
+        "message": "No face detected for 3.1s",
+        "timestamp": 1770470423.4654932
+      },
+      {
+        "type": "no_face",
+        "severity": "low",
+        "duration_secs": 3.5,
+        "message": "No face detected for 3.5s",
+        "timestamp": 1770470426.9687374
+      }
+    ],
+    "avg_attention_score": 1.0,
+    "screen_focus_pct": 100.0,
+    "face_present_pct": 0.0
+  }
+}

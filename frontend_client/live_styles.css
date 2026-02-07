@@ -1,0 +1,138 @@
+/* Live interview specific styles */
+
+.live-tag {
+    font-size: 0.6rem;
+    background: var(--danger-color);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    vertical-align: super;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.live-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 20px;
+    height: calc(100vh - 140px);
+}
+
+.control-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.audio-visualizer-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.audio-visualizer-card h3 {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+#audio-visualizer {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mic-control {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.mic-btn.active {
+    border-color: var(--success-color);
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--success-color);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+    animation: pulse 2s infinite;
+}
+
+.mic-btn.muted {
+    border-color: var(--danger-color);
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger-color);
+}
+
+.mic-icon {
+    font-size: 2rem;
+}
+
+.mic-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.mic-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 8px 0 0;
+}
+
+.transcript-log {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.transcript-entry {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.transcript-entry.ai {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 3px solid var(--primary-color);
+}
+
+.transcript-entry.ai::before {
+    content: "Zenith: ";
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .live-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}

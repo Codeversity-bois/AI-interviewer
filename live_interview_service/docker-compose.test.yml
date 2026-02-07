@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  live-interview-service:
+    build:
+      context: ..
+      dockerfile: live_interview_service/Dockerfile
+    container_name: live-interview-test
+    ports:
+      - "8001:8001"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - ASTRA_DB_APPLICATION_TOKEN=${ASTRA_DB_APPLICATION_TOKEN:-}
+      - ASTRA_DB_API_ENDPOINT=${ASTRA_DB_API_ENDPOINT:-}
+      - MONGO_URI=${MONGO_URI:-mongodb://host.docker.internal:27017}
+      - MONGO_DB_NAME=${MONGO_DB_NAME:-zenith_interviews}
+    volumes:
+      # Mount output directory to see output.json
+      - ./outputs:/app/outputs
+      # Mount test files
+      - ./example_input.json:/app/example_input.json:ro
+      - ./test_service.py:/app/test_service.py:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8001/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

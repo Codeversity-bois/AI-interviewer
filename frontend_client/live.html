@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith — Live Voice Interview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="live_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">Zenith <span class="live-tag">LIVE</span></div>
+            <div class="status-indicator">
+                <span id="connection-status" class="status-dot disconnected"></span>
+                <span id="status-text">Disconnected</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Section 1: Setup -->
+            <section id="setup-section" class="active-section">
+                <div class="card">
+                    <h1>Live Voice Interview</h1>
+                    <p>Real-time conversation powered by Gemini Live API. No typing needed — just speak naturally.</p>
+
+                    <div class="form-group">
+                        <label for="resume-context">Resume / Background (optional)</label>
+                        <textarea id="resume-context" rows="4" placeholder="e.g. 3 years Python, React, built microservices at Acme Corp, B.S. Computer Science from MIT..."></textarea>
+                    </div>
+
+                    <button id="btn-start" class="btn primary">Start Live Interview</button>
+                    <div id="setup-loading" class="loading hidden">Connecting to Gemini...</div>
+                </div>
+            </section>
+
+            <!-- Section 2: Live Interview -->
+            <section id="live-section" class="hidden-section">
+                <div class="live-grid">
+                    <div class="chat-column">
+                        <div class="chat-header">
+                            <h2>Zenith — Live Interview</h2>
+                            <span class="phase-badge" id="live-status">Listening</span>
+                        </div>
+                        <div class="chat-messages" id="chat-messages"></div>
+                    </div>
+
+                    <div class="control-column">
+                        <div class="audio-visualizer-card">
+                            <h3>Audio</h3>
+                            <canvas id="audio-visualizer" width="300" height="100"></canvas>
+                        </div>
+
+                        <div class="mic-control">
+                            <button id="btn-mic" class="mic-btn active">
+                                <span class="mic-icon">&#127908;</span>
+                                <span class="mic-label">Mic Active</span>
+                            </button>
+                            <p class="mic-hint">Speak naturally. Zenith will respond with voice.</p>
+                            <p class="mic-hint">Use headphones to avoid echo.</p>
+                        </div>
+
+                        <button id="btn-end" class="btn danger">End Interview</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Done -->
+            <section id="done-section" class="hidden-section">
+                <div class="card">
+                    <h1>Interview Complete</h1>
+                    <p>Thanks for using the Gemini Live Interview. Your conversation transcript is below.</p>
+                    <div id="transcript-log" class="transcript-log"></div>
+                    <button id="btn-restart" class="btn secondary">Start New Interview</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="live_app.js"></script>
+</body>
+</html>

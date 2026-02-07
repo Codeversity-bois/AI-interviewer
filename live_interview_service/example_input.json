@@ -1,0 +1,35 @@
+{
+  "candidate_id": "candidate_12345",
+  "job_id": "job_software_engineer_001",
+  "job_description": "We are looking for a skilled Software Engineer with 3+ years of experience in Python, React, and cloud technologies. The ideal candidate should have experience building scalable web applications, working with microservices architecture, and deploying applications on AWS. Strong problem-solving skills, ability to work in a team environment, and excellent communication skills are essential.",
+  "projects": [
+    {
+      "description": "Built a real-time chat application using React and Node.js with WebSocket support. Implemented user authentication, message encryption, and real-time notifications. Deployed on AWS using EC2 and RDS. The application handles 10,000+ concurrent users.",
+      "skills": "React, Node.js, WebSocket, AWS, PostgreSQL, Redis"
+    },
+    {
+      "description": "Developed a microservices-based e-commerce platform using Python Flask and Docker. Implemented payment gateway integration, inventory management, and order processing services. Used Kubernetes for orchestration and achieved 99.9% uptime.",
+      "skills": "Python, Flask, Docker, Kubernetes, MongoDB, REST APIs"
+    },
+    {
+      "description": "Created a machine learning pipeline for fraud detection using Python, scikit-learn, and TensorFlow. Achieved 95% accuracy in detecting fraudulent transactions. Deployed model using AWS SageMaker and integrated with existing payment systems.",
+      "skills": "Python, Machine Learning, TensorFlow, scikit-learn, AWS SageMaker, Pandas"
+    }
+  ],
+  "skills": [
+    "Python",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "PostgreSQL",
+    "MongoDB",
+    "REST APIs",
+    "Microservices",
+    "Git"
+  ],
+  "education": "Bachelor of Science in Computer Science from State University, graduated in 2020 with a GPA of 3.8/4.0. Relevant coursework: Data Structures, Algorithms, Database Systems, Software Engineering, Distributed Systems.",
+  "leetcode_profile": "https://leetcode.com/candidate123 - Solved 200+ problems including dynamic programming, graph algorithms, and system design questions. Active participant in weekly contests."
+}

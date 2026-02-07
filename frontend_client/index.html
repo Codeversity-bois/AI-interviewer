@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith — AI Interviewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">Zenith</div>
+            <div class="status-indicator">
+                <span id="connection-status" class="status-dot disconnected"></span>
+                <span id="status-text">Disconnected</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Section 1: Resume Input (JSON) -->
+            <section id="resume-section" class="active-section">
+                <div class="card">
+                    <h1>Candidate Profile</h1>
+                    <p>Enter resume details below to begin the interview.</p>
+
+                    <div class="form-group">
+                        <label for="resume-name">Name / Username</label>
+                        <input type="text" id="resume-name" placeholder="e.g. John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume-experience">Experience</label>
+                        <textarea id="resume-experience" rows="3" placeholder="e.g. Software Engineer at Acme Corp for 3 years, led backend team..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume-skills">Technical Skills</label>
+                        <textarea id="resume-skills" rows="2" placeholder="e.g. Python, Go, Kubernetes, React, PostgreSQL..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume-projects">Projects</label>
+                        <textarea id="resume-projects" rows="3" placeholder="e.g. Built a real-time analytics pipeline using Kafka and Flink..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume-education">Education</label>
+                        <textarea id="resume-education" rows="2" placeholder="e.g. B.S. Computer Science from MIT, 2021"></textarea>
+                    </div>
+
+                    <button id="btn-process-resume" class="btn primary">Submit Profile</button>
+                    <div id="resume-loading" class="loading hidden">Processing...</div>
+                </div>
+            </section>
+
+            <!-- Section 2: Interview Setup -->
+            <section id="setup-section" class="hidden-section">
+                <div class="card">
+                    <h1>Interview Setup</h1>
+                    <p>Profile processed. Ready to start your interview with Zenith.</p>
+
+                    <div class="form-group">
+                        <label>User ID</label>
+                        <input type="text" id="user-id" value="candidate-001" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Profile Sections Stored</label>
+                        <div class="stats-box">
+                            <span id="chunks-count">0</span> sections embedded
+                        </div>
+                    </div>
+
+                    <button id="btn-start-interview" class="btn primary">Start Interview</button>
+                </div>
+            </section>
+
+            <!-- Section 3: Active Interview -->
+            <section id="interview-section" class="hidden-section">
+                <div class="interview-grid">
+                    <div class="chat-column">
+                        <div class="chat-header">
+                            <h2>Zenith — Interviewer</h2>
+                            <span class="phase-badge" id="interview-phase">Introduction</span>
+                        </div>
+                        <div class="chat-messages" id="chat-messages">
+                            <!-- Messages will appear here -->
+                        </div>
+                        <div class="input-area">
+                            <input type="text" id="user-input" placeholder="Type your answer...">
+                            <button id="btn-send-text" class="btn icon-btn" title="Send text">&#10148;</button>
+                            <button id="btn-mic" class="btn icon-btn secondary" title="Hold to speak">&#127908;</button>
+                        </div>
+                    </div>
+
+                    <div class="media-column">
+                        <div class="video-preview-card">
+                            <h3>Live Camera</h3>
+                            <video id="webcam-preview" autoplay playsinline muted></video>
+                            <div class="video-overlay">
+                                <span class="recording-indicator">&#9679; PROCTORING ACTIVE</span>
+                            </div>
+                        </div>
+
+                        <div class="violations-card">
+                            <h3>Session Status</h3>
+                            <div id="violation-log">
+                                <!-- Violations appear here -->
+                            </div>
+                        </div>
+
+                        <button id="btn-end-interview" class="btn danger">End Interview</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Summary -->
+            <section id="summary-section" class="hidden-section">
+                <div class="card summary-card">
+                    <h1>Interview Summary</h1>
+                    <div id="summary-stats" class="summary-stats"></div>
+                    <div id="summary-qa" class="summary-qa"></div>
+                    <div class="summary-raw-toggle">
+                        <button id="btn-toggle-raw" class="btn secondary btn-sm">Show Raw Data</button>
+                    </div>
+                    <div class="summary-content hidden" id="summary-content"></div>
+                    <button id="btn-restart" class="btn secondary">Start New Interview</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+pypdf2>=2.0
+pytesseract
+pdf2image
+sentence_transformers
+astrapy
