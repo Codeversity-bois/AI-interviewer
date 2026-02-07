@@ -1,5 +1,8 @@
 # Gemini AI Interview Engine
 
+
+
+run using -  `uvicorn live_interview_service.service:app --host 0.0.0.0 --port 8001 --reload`
 ## 🎯 Project Overview
 
 The **Gemini AI Interview Engine** is the core intelligence module of our AI Interviewer system. It conducts professional, contextual interviews using Google's Gemini API with RAG (Retrieval-Augmented Generation) capabilities for resume-aware questioning and comprehensive feedback generation.
